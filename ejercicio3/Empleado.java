@@ -54,9 +54,6 @@ public abstract class Empleado {
         if (obj == null) {
             return false;
         }
-        if (getClass() != obj.getClass()) {
-            return false;
-        }
         final Empleado other = (Empleado) obj;
         return Objects.equals(this.id, other.id);
     }
