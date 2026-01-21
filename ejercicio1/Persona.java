@@ -54,9 +54,6 @@ public abstract class Persona {
         if (obj == null) {
             return false;
         }
-        if (getClass() != obj.getClass()) {
-            return false;
-        }
         final Persona other = (Persona) obj;
         return Objects.equals(this.id, other.id);
     }
