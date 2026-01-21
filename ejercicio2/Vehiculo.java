@@ -54,9 +54,6 @@ public abstract class Vehiculo {
         if (obj == null) {
             return false;
         }
-        if (getClass() != obj.getClass()) {
-            return false;
-        }
         final Vehiculo other = (Vehiculo) obj;
         return Objects.equals(this.id, other.id);
     }
